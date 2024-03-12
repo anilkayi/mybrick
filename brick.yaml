@@ -1,0 +1,15 @@
+name: my_brick
+description: A Flutter starter app that includes support for an HTTP client, themes, routing, localization, and dependency injection.
+repository: https://github.com/cem256/starter_template
+
+version: 1.1.5+8
+
+environment:
+  mason: ^0.1.0-dev.52
+
+vars:
+  project_name:
+    type: string
+    description: Project name
+    default: Starter Template
+    prompt: Enter the name of your project
