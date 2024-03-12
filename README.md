@@ -30,13 +30,13 @@ dart pub global activate mason_cli
 Add starter_template to your library
 
 ```sh
-mason add starter_template
+mason add my_brick
 ```
 
 Generate your brick
 
 ```sh
-mason make starter_template
+mason make my_brick
 ```
 
 ## Variables ✨
@@ -44,8 +44,7 @@ mason make starter_template
 | Variable       | Description                 | Default                | Type     |
 | -------------- | --------------------------- | ---------------------- | -------- |
 | `project_name` | Project Name                | Starter Template       | `string` |
-| `description`  | Project description         | A new Flutter project. | `string` |
-| `organization` | Organization of the project | com.example            | `string` |
+
 
 ## Output 📦
 
@@ -84,19 +83,33 @@ mason make starter_template
  ┃ ┃ ┃ ┗ 📜network_client.dart
  ┃ ┣ 📂extensions
  ┃ ┃ ┗ 📜context_extensions.dart
- ┃ ┗ 📂utils
+ ┃ ┣ 📂manager
+ ┃ ┃ ┗ 📜manager.dart
+ ┃ ┣ 📂utils
  ┃ ┃ ┣ 📂device_info
  ┃ ┃ ┃ ┗ 📜device_info_utils.dart
  ┃ ┃ ┗ 📂package_info
  ┃ ┃ ┃ ┗ 📜package_info_utils.dart
+ ┃ ┣ 📂widgets
+ ┃ ┃ ┗ 📜widgets.dart
+ ┃ ┗ 📜core.dart
+ ┣ 📂data
+ ┃ ┣ 📂data_source
+ ┃ ┃ ┣ 📂local
+ ┃ ┃ ┃ ┗ 📜local.dart
+ ┃ ┃ ┗ 📂remote
+ ┃ ┃ ┃ ┗ 📜remote.dart
+ ┃ ┗ 📂repository
+ ┃ ┃ ┗ 📜repository.dart
  ┣ 📂feature
  ┃ ┗ 📂home
+ ┃ ┃ ┣ 📂cubit
+ ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┣ 📂model
  ┃ ┃ ┃ ┗ 📜.gitkeep
- ┃ ┃ ┣ 📂view
+ ┃ ┃ ┗ 📂view
  ┃ ┃ ┃ ┗ 📜home_view.dart
- ┃ ┃ ┗ 📂view_model
- ┃ ┃ ┃ ┗ 📜.gitkeep
+ ┣ 📜.DS_Store
  ┣ 📜bootstrap.dart
  ┣ 📜locator.dart
  ┣ 📜main_development.dart
